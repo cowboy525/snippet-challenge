@@ -1,0 +1,65 @@
+{
+    "AwsSettings": {
+        "AwsAccessKeyID": "AKxxxxxxxxx",
+        "AwsSecretAccessKey": "SMxxxxxxxxxx",
+        "TestAwsAccessKey": "xxxxx",
+        "TestAwsSecretAccessKey": "xxxxx",
+        "AwsSnsRegionName": "us-west-2",
+        "AwsS3RegionName": null,
+        "AwsStorageBucketName": "file.ernie.works",
+        "EnabledS3Test": 0,
+        "TestAwsStorageBucketName": "file-test.ernie.works",
+        "AwsCloudFrontSignKeyID": "xxxxx",
+        "AwsCloudFrontSignPrivateKeyPath": ".keys/cloudfront.pem",
+        "AwsS3CustomDomain": "file.ernie.works",
+        "TestAwsS3CustomDomain": "file-test.ernie.works"
+    },
+    "ServiceSettings": {
+        "SiteURL": "http://localhost:13000",
+        "ListenAddress": ":13000",
+        "ConnectionSecurity": "",
+        "EnableDeveloper": false,
+        "SessionLengthWebInDays": 180,
+        "AtomicRequest": true
+    },
+    "SqlSettings": {
+        "DriverName": "mysql",
+        "DataSource": "root:root@tcp(127.0.0.1:3306)/batoner?charset=utf8mb4,utf8&readTimeout=30s&writeTimeout=30s&parseTime=true",
+        "DataSourceReplicas": [],
+        "MaxIdleConns": 20,
+        "ConnMaxLifetimeMilliseconds": 3600000,
+        "MaxOpenConns": 300,
+        "Trace": false,
+        "QueryTimeout": 30
+    },
+    "LogSettings": {
+        "EnableConsole": true,
+        "ConsoleLevel": "DEBUG",
+        "ConsoleJson": true,
+        "EnableFile": true,
+        "FileLevel": "INFO",
+        "FileJson": true,
+        "FileLocation": "",
+        "EnableWebhookDebugging": true,
+        "EnableDiagnostics": true
+    },
+    "EmailSettings": {
+        "FeedbackName": "...",
+        "FeedbackEmail": "...",
+        "ReplyToAddress": "...",
+        "FeedbackOrganization": "",
+        "EnableSMTPAuth": true,
+        "SMTPUsername": "...",
+        "SMTPPassword": "...",
+        "SMTPServer": "...",
+        "SMTPPort": "587",
+        "SMTPServerTimeout": 10,
+        "ConnectionSecurity": "STARTTLS",
+        "SkipServerCertificateVerification": false
+    },
+    "ElasticSearchSettings": {
+        "ConnectionURL": "",
+        "Username": "",
+        "Password": ""
+    }
+}

@@ -1,0 +1,24 @@
+.idea/
+bin/
+.env
+.env.local
+.env.*.local
+gin-bin
+
+/data
+
+/vendor
+/media
+
+.vscode
+.keys
+.scannerwork
+.DS_Store
+.pre-commit-config.yaml
+
+config/config.json
+
+*.log
+
+# $GOPATH for Docker local stage
+/.go
