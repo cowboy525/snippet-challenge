@@ -10,7 +10,7 @@ import (
 
 // Snippet structure
 type Snippet struct {
-	URL       string    `json:"url" validate:"blank:false;required"`
+	URL       string    `json:"url"`
 	Name      string    `json:"name"`
 	ExpiresAt time.Time `json:"expires_at"`
 	Body      string    `json:"snippet"`
@@ -32,7 +32,7 @@ func (o *Snippet) ToJSON() string {
 
 // SnippetRequest structure
 type SnippetRequest struct {
-	Name      string `json:"name"`
+	Name      string `json:"name" validate:"blank:false;required"`
 	ExpiresIn uint64 `json:"expires_in"`
-	Body      string `json:"snippet"`
+	Body      string `json:"snippet" validate:"blank:false;required"`
 }

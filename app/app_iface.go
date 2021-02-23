@@ -20,4 +20,7 @@ type Iface interface {
 	SetServer(srv *Server)
 	Srv() *Server
 	Store() *store.Store
+
+	CreateSnippet(request *model.SnippetRequest) (*model.Snippet, *model.AppError)
+	GetSnippet(name string) (*model.Snippet, *model.AppError)
 }

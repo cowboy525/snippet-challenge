@@ -4,7 +4,6 @@ import (
 	"net/http"
 
 	"github.com/topoface/snippet-challenge/model"
-	"github.com/topoface/snippet-challenge/validator"
 )
 
 type Binding interface {
@@ -20,8 +19,4 @@ var (
 
 func Default() Binding {
 	return JSON
-}
-
-func validate(obj interface{}, data interface{}) *model.AppError {
-	return validator.Validate(obj, data)
 }

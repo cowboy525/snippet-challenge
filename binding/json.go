@@ -40,7 +40,7 @@ func (jsonBinding) Bind(req *http.Request, obj interface{}) (map[string]interfac
 	if err := decodeJSON(bytes.NewReader(body), obj); err != nil {
 		return nil, err
 	}
-	return request, validate(obj, request)
+	return request, nil
 }
 
 func (jsonBinding) BindArray(req *http.Request, obj interface{}) ([]map[string]interface{}, *model.AppError) {
@@ -55,7 +55,7 @@ func (jsonBinding) BindArray(req *http.Request, obj interface{}) ([]map[string]i
 	if err := decodeJSON(bytes.NewReader(body), obj); err != nil {
 		return nil, err
 	}
-	return request, validate(obj, request)
+	return request, nil
 }
 
 func decodeJSON(r io.Reader, obj interface{}) *model.AppError {

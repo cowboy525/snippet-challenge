@@ -15,5 +15,5 @@ func NewStore() *Store {
 }
 
 func (ss *Store) CreateStores() {
-	// ss.stores.snippet = newSnippetStore(ss)
+	ss.snippet = newSnippetStore(ss)
 }
