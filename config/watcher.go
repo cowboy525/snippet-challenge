@@ -6,7 +6,7 @@ import (
 	"github.com/fsnotify/fsnotify"
 	"github.com/pkg/errors"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
+	"github.com/topoface/snippet-challenge/mlog"
 )
 
 // watcher monitors a file for changes

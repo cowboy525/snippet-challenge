@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
+	"github.com/topoface/snippet-challenge/mlog"
 )
 
 func TestLoggingBeforeInitialized(t *testing.T) {

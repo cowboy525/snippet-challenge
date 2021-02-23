@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/i18n"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils/fileutils"
+	"github.com/topoface/snippet-challenge/i18n"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/utils/fileutils"
 )
 
 var T i18n.TranslateFunc

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
 	"github.com/pkg/errors"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 // MemoryStore implements the Store interface. It is meant primarily for testing.

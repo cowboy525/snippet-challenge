@@ -6,8 +6,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 func (s *Server) Config() *model.Config {

@@ -3,7 +3,7 @@ package config
 import (
 	"reflect"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 // removeEnvOverrides returns a new config without the given environment overrides.

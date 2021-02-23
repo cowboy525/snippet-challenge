@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 type ReadCloseSeeker interface {

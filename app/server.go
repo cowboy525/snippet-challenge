@@ -11,13 +11,13 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/config"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/services/filestore"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/store"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/store/sqlstore"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils"
+	"github.com/topoface/snippet-challenge/config"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/services/filestore"
+	"github.com/topoface/snippet-challenge/store"
+	"github.com/topoface/snippet-challenge/store/sqlstore"
+	"github.com/topoface/snippet-challenge/utils"
 )
 
 var MaxNotificationsPerChannelDefault int64 = 1000000

@@ -10,10 +10,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils/jsonutils"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/viper"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/utils/jsonutils"
+	"github.com/topoface/snippet-challenge/viper"
 )
 
 // newViper creates an instance of viper.Viper configured for parsing a configuration.

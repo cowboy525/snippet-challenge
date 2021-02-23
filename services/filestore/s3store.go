@@ -15,8 +15,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/cloudfront/sign"
 	"github.com/aws/aws-sdk-go/service/s3"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 type S3FileBackend struct {

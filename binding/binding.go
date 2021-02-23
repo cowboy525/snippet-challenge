@@ -3,8 +3,8 @@ package binding
 import (
 	"net/http"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/validator"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/validator"
 )
 
 type Binding interface {

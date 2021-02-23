@@ -6,7 +6,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 func GetSubpathFromConfig(config *model.Config) (string, error) {

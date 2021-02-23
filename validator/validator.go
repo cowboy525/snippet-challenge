@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils"
 	"github.com/fatih/structs"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/utils"
 )
 
 func ValidateNull(value interface{}, option string) *model.Error {

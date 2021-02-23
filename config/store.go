@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 // Listener is a callback function invoked when the configuration changes.

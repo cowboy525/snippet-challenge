@@ -5,10 +5,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/app"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/services/configservice"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/web"
+	"github.com/topoface/snippet-challenge/app"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/services/configservice"
+	"github.com/topoface/snippet-challenge/web"
 )
 
 // Routes : define api routes

@@ -8,7 +8,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils/jsonutils"
+	"github.com/topoface/snippet-challenge/utils/jsonutils"
 )
 
 func TestHumanizeJsonError(t *testing.T) {

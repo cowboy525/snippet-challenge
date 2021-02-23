@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/store"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/store"
 )
 
 type App struct {

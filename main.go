@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ernie-mlg/ErniePJT-main-api-go/cmd"
+	"github.com/topoface/snippet-challenge/cmd"
 )
 
 func main() {

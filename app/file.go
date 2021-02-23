@@ -4,9 +4,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/services/filestore"
 	"github.com/rwcarlsen/goexif/exif"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/services/filestore"
 )
 
 const (

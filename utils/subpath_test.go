@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/utils"
 )
 
 func TestGetSubpathFromConfig(t *testing.T) {

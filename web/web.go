@@ -3,11 +3,10 @@ package web
 import (
 	"net/http"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/app"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/services/configservice"
 	"github.com/gorilla/mux"
+	"github.com/topoface/snippet-challenge/app"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/services/configservice"
 )
 
 // Web structure
@@ -30,13 +29,6 @@ func New(config configservice.ConfigService, globalOptions app.AppOptionCreator,
 	web.InitStatic()
 
 	return web
-}
-
-// ReturnStatusOK : return OK status
-func ReturnStatusOK(w http.ResponseWriter) {
-	m := make(map[string]string)
-	m[model.STATUS] = model.STATUS_OK
-	w.Write([]byte(model.MapToJSON(m)))
 }
 
 // ReturnStatusNoContent : return NoContent status

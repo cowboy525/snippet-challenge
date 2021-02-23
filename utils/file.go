@@ -8,8 +8,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
 	"github.com/gabriel-vasile/mimetype"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 // CopyFile will copy a file from src path to dst path.

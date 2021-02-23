@@ -3,9 +3,9 @@ package utils_test
 import (
 	"testing"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/topoface/snippet-challenge/utils"
 )
 
 // Test merging maps alone. This isolates the complexity of merging maps from merging maps recursively in

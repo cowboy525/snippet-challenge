@@ -1,7 +1,7 @@
 package configservice
 
 import (
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 // An interface representing something that contains a Config, such as the app.App struct

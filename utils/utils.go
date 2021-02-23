@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/types"
 	"github.com/fatih/structs"
 	"github.com/iancoleman/strcase"
+	"github.com/topoface/snippet-challenge/types"
 	"golang.org/x/net/idna"
 )
 

@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils/fileutils"
 	"github.com/joho/godotenv"
+	"github.com/topoface/snippet-challenge/utils/fileutils"
 )
 
 func ReadTestFile(name string) ([]byte, error) {

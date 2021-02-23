@@ -1,4 +1,4 @@
-module github.com/ernie-mlg/ErniePJT-main-api-go
+module github.com/topoface/snippet-challenge
 
 go 1.14
 

@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
+	"github.com/topoface/snippet-challenge/mlog"
 )
 
 const (

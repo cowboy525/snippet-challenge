@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/cmd/commands"
 	"github.com/joho/godotenv"
+	"github.com/topoface/snippet-challenge/cmd/commands"
 )
 
 func Execute() {

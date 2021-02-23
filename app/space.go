@@ -3,7 +3,7 @@ package app
 import (
 	"net/http"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 // CreateSpace create a new space

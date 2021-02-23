@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/store"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/store/sqlstore/pagination"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/store"
+	"github.com/topoface/snippet-challenge/store/sqlstore/pagination"
+	"github.com/topoface/snippet-challenge/utils"
 )
 
 // SQLSpaceStore structure

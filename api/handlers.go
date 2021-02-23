@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/web"
+	"github.com/topoface/snippet-challenge/web"
 )
 
 // Context type

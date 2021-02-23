@@ -1,8 +1,8 @@
 package commands
 
 import (
-	"github.com/ernie-mlg/ErniePJT-main-api-go/viper"
 	"github.com/spf13/cobra"
+	"github.com/topoface/snippet-challenge/viper"
 )
 
 type Command = cobra.Command

@@ -8,12 +8,12 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/api"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/app"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/config"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/mlog"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/viper"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/web"
+	"github.com/topoface/snippet-challenge/api"
+	"github.com/topoface/snippet-challenge/app"
+	"github.com/topoface/snippet-challenge/config"
+	"github.com/topoface/snippet-challenge/mlog"
+	"github.com/topoface/snippet-challenge/viper"
+	"github.com/topoface/snippet-challenge/web"
 )
 
 var serverCmd = &cobra.Command{

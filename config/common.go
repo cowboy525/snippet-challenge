@@ -6,8 +6,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
 	"github.com/pkg/errors"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 // commonStore enables code sharing between different backing implementations

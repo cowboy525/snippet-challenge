@@ -3,8 +3,8 @@ package config
 import (
 	"strings"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
-	"github.com/ernie-mlg/ErniePJT-main-api-go/utils"
+	"github.com/topoface/snippet-challenge/model"
+	"github.com/topoface/snippet-challenge/utils"
 )
 
 // desanitize replaces fake settings with their actual values.

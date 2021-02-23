@@ -1,7 +1,7 @@
 package store
 
 import (
-	"github.com/ernie-mlg/ErniePJT-main-api-go/store"
+	"github.com/topoface/snippet-challenge/store"
 )
 
 // SupplierStores structure

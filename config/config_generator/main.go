@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/config/config_generator/generator"
+	"github.com/topoface/snippet-challenge/config/config_generator/generator"
 )
 
 func main() {

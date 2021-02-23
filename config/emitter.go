@@ -3,7 +3,7 @@ package config
 import (
 	"sync"
 
-	"github.com/ernie-mlg/ErniePJT-main-api-go/model"
+	"github.com/topoface/snippet-challenge/model"
 )
 
 // emitter enables threadsafe registration and broadcasting to configuration listeners
