@@ -1,0 +1,27 @@
+{
+    "FileSettings": {
+        "MaxFileSize": 52428800,
+        "DriverName": "local",
+        "Directory": "./data/"
+    },
+    "ServiceSettings": {
+        "SiteURL": "",
+        "ListenAddress": ":13000",
+        "ConnectionSecurity": "",
+        "EnableDeveloper": false,
+        "SessionCacheInMinutes": 10,
+        "SessionLengthWebInDays": 180,
+        "AtomicRequest": false
+    },
+    "LogSettings": {
+        "EnableConsole": true,
+        "ConsoleLevel": "DEBUG",
+        "ConsoleJson": true,
+        "EnableFile": true,
+        "FileLevel": "INFO",
+        "FileJson": true,
+        "FileLocation": "",
+        "EnableWebhookDebugging": true,
+        "EnableDiagnostics": true
+    }
+}

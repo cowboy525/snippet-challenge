@@ -1,8 +1,5 @@
 .idea/
 bin/
-.env
-.env.local
-.env.*.local
 gin-bin
 
 /data
@@ -15,8 +12,6 @@ gin-bin
 .scannerwork
 .DS_Store
 .pre-commit-config.yaml
-
-config/config.json
 
 *.log
 
