@@ -2,7 +2,6 @@ package filestore
 
 import (
 	"io"
-	"net/http"
 	"time"
 
 	"github.com/topoface/snippet-challenge/model"
@@ -23,23 +22,8 @@ type FileBackend interface {
 }
 
 func NewFileBackend(config *model.Config) (FileBackend, *model.AppError) {
-	switch *config.FileSettings.DriverName {
-	case model.IMAGE_DRIVER_S3:
-		return &S3FileBackend{
-			endpoint:    *config.AwsSettings.AwsS3CustomDomain,
-			accessKey:   *config.AwsSettings.AwsAccessKeyID,
-			secretKey:   *config.AwsSettings.AwsSecretAccessKey,
-			secure:      config.AwsSettings.AwsS3SSL == nil || *config.AwsSettings.AwsS3SSL,
-			region:      *config.AwsSettings.AwsS3RegionName,
-			bucket:      *config.AwsSettings.AwsStorageBucketName,
-			signKeyId:   *config.AwsSettings.AwsCloudFrontSignKeyID,
-			signKeyPath: *config.AwsSettings.AwsCloudFrontSignPrivateKeyPath,
-		}, nil
-	case model.IMAGE_DRIVER_LOCAL:
-		return &LocalFileBackend{
-			baseUrl:   *config.ServiceSettings.SiteURL,
-			directory: *config.FileSettings.Directory,
-		}, nil
-	}
-	return nil, model.NewAppError("NewFileBackend", "services.file.no_driver", nil, "", http.StatusInternalServerError)
+	return &LocalFileBackend{
+		baseUrl:   *config.ServiceSettings.SiteURL,
+		directory: *config.FileSettings.Directory,
+	}, nil
 }

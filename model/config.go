@@ -118,7 +118,7 @@ func (s *ServiceSettings) isValid() *AppError {
 	if host == "" {
 		isValidHost = true
 	} else {
-		isValidHost = (net.ParseIP(host) != nil) || IsDomainName(host)
+		isValidHost = (net.ParseIP(host) != nil)
 	}
 	portInt, err := strconv.Atoi(port)
 	if err != nil || !isValidHost || portInt < 0 || portInt > math.MaxUint16 {

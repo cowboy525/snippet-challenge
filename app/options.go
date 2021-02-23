@@ -43,8 +43,5 @@ type AppOptionCreator func() []AppOption
 func ServerConnector(s *Server) AppOption {
 	return func(a *App) {
 		a.srv = s
-		if *s.Config().ServiceSettings.AtomicRequest {
-			a.store = s.Store.CopyStore()
-		}
 	}
 }

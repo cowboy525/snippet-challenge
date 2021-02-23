@@ -11,7 +11,9 @@ import (
 type App struct {
 	srv *Server
 
-	store store.Store
+	store *store.Store
+
+	log *mlog.Logger
 
 	path    string
 	context context.Context
@@ -45,7 +47,7 @@ func (a *App) Srv() *Server {
 	return a.srv
 }
 
-func (a *App) Store() store.Store {
+func (a *App) Store() *store.Store {
 	if *a.Config().ServiceSettings.AtomicRequest {
 		return a.store
 	}
@@ -56,6 +58,10 @@ func (a *App) Path() string {
 	return a.path
 }
 
+func (a *App) Log() *mlog.Logger {
+	return a.log
+}
+
 func (a *App) SetPath(s string) {
 	a.path = s
 }
@@ -64,4 +70,7 @@ func (a *App) SetContext(c context.Context) {
 }
 func (a *App) SetServer(srv *Server) {
 	a.srv = srv
+}
+func (a *App) SetLog(l *mlog.Logger) {
+	a.log = l
 }

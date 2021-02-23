@@ -57,10 +57,6 @@ func (cs *commonStore) set(newCfg *model.Config, allowEnvironmentOverrides bool,
 
 	newCfg.SetDefaults()
 
-	// Sometimes the config is received with "fake" data in sensitive fields. Apply the real
-	// data from the existing config as necessary.
-	desanitize(oldCfg, newCfg)
-
 	if validate != nil {
 		if err := validate(newCfg); err != nil {
 			return nil, errors.Wrap(err, "new configuration is invalid")
@@ -109,10 +105,6 @@ func (cs *commonStore) load(f io.ReadCloser, needsSave bool, validate func(*mode
 		if err = validate(loadedCfg); err != nil {
 			return errors.Wrap(err, "invalid config")
 		}
-	}
-
-	if changed := fixConfig(loadedCfg); changed {
-		needsSave = true
 	}
 
 	cs.configLock.Lock()

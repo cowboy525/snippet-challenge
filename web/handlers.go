@@ -9,7 +9,6 @@ import (
 	"github.com/topoface/snippet-challenge/app"
 	"github.com/topoface/snippet-challenge/mlog"
 	"github.com/topoface/snippet-challenge/model"
-	"github.com/topoface/snippet-challenge/utils"
 )
 
 // GetHandlerName : get handler name from handler func
@@ -39,12 +38,7 @@ func (h Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	)
 
 	c.App.SetPath(r.URL.Path)
-	c.Params = ParamsFromRequest(r)
 	c.Log = c.App.Log()
-
-	subpath, _ := utils.GetSubpathFromConfig(c.App.Config())
-	siteURLHeader := app.GetProtocol(r) + "://" + r.Host + subpath
-	c.SetSiteURLHeader(siteURLHeader)
 
 	// All api response bodies will be JSON formatted by default
 	w.Header().Set("Content-Type", "application/json")

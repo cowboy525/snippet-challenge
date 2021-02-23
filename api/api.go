@@ -39,7 +39,6 @@ func Init(configservice configservice.ConfigService, globalOptionsFunc app.AppOp
 
 	api.BaseRoutes.Snippets = api.BaseRoutes.APIRoot.PathPrefix("/snippets").Subrouter()
 
-	api.InitAPIRoot()
 	api.InitSnippets()
 
 	// root.Handle("/api/{anything:.*}", http.HandlerFunc(api.Handle404))
@@ -51,9 +50,6 @@ func Init(configservice configservice.ConfigService, globalOptionsFunc app.AppOp
 func (api *API) Handle404(w http.ResponseWriter, r *http.Request) {
 	// web.Handle404(api.ConfigService, w, r)
 }
-
-// ReturnStatusOK : return OK status
-var ReturnStatusOK = web.ReturnStatusOK
 
 // ReturnStatusNoContent : return NoContent status
 var ReturnStatusNoContent = web.ReturnStatusNoContent

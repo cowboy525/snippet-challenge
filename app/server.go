@@ -16,14 +16,13 @@ import (
 	"github.com/topoface/snippet-challenge/model"
 	"github.com/topoface/snippet-challenge/services/filestore"
 	"github.com/topoface/snippet-challenge/store"
-	"github.com/topoface/snippet-challenge/store/sqlstore"
 	"github.com/topoface/snippet-challenge/utils"
 )
 
 var MaxNotificationsPerChannelDefault int64 = 1000000
 
 type Server struct {
-	Store store.Store
+	Store *store.Store
 
 	RootRouter *mux.Router
 	Router     *mux.Router
@@ -68,7 +67,7 @@ func NewServer(options ...Option) (*Server, error) {
 	mlog.InitGlobalLogger(s.Log)
 
 	if s.Store == nil {
-		s.Store = sqlstore.NewSQLSupplier(s.Config().SQLSettings, false)
+		s.Store = store.NewStore()
 	}
 
 	subpath := "/"
@@ -92,10 +91,6 @@ func (s *Server) Shutdown() error {
 	mlog.Info("Stopping Server...")
 
 	s.configStore.Close()
-
-	if s.Store != nil {
-		s.Store.Close()
-	}
 
 	mlog.Info("Server stopped")
 	return nil
